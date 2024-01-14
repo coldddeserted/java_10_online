@@ -5,16 +5,25 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class hw1_2 {
-    static int result = 0;
+    static int count = 0;
     static String input;
     public static void count() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         input = reader.readLine();
+        char [] chars = input.toCharArray();
 
-        for (int i = 0; i < input.length(); i++) {
-            if(Character.isAlphabetic(input.charAt(i))) ;
+        for (int i = 0; i < chars.length; i++) {
+            if(chars[i]>='A'&&chars[i]<='Z' || chars[i]>='a'&&chars[i]<='z' || chars[i]>='А'&&chars[i]<='Я' || chars[i]<='а'&&chars[i]>='я') {
+                System.out.print(chars[i]);
+                for (int j = chars.length-1; j >= i; j--) {
+                    if(chars[j]==chars[i]) {
+                        count++;
+                        chars[j]='0';
+                    }
+                }
+                System.out.println(" = " + count);
+                count=0;
+            }
         }
-
-        System.out.println(result);
     }
 }

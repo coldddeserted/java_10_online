@@ -7,12 +7,13 @@ import java.io.InputStreamReader;
 public class hw1_1{
     static int result = 0;
     static String input;
-    public static void Sum() throws IOException {
+    public static void sum() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         input = reader.readLine();
+        char [] chars = input.toCharArray();
 
-        for (int i = 0; i < input.length(); i++) {
-            if(Character.isDigit(input.charAt(i))) result += input.charAt(i)-'0';
+        for (int i = 0; i < chars.length; i++) {
+            if(chars[i]>='1'&&chars[i]<='9') result += chars[i]-'0';
         }
 
         System.out.println(result);
