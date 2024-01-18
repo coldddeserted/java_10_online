@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class hw1_1{
+public class SumFromChar {
     static int result = 0;
     static String input;
     public static void sum() throws IOException {
