@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        SumFromChar.sum();
-        CountLettersFromChar.count();
-        FinishLessons.lessons();
+        SumFromChar.SumFromChar();
+        CountLettersFromChar.CountLettersFromChar();
+        FinishLessons.FinishLessons();
     }
 }

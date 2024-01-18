@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class SumFromChar {
     static int result = 0;
     static String input;
-    public static void sum() throws IOException {
+    public static void SumFromChar() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         input = reader.readLine();
         char [] chars = input.toCharArray();

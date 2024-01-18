@@ -12,7 +12,7 @@ public class FinishLessons {
     static int pair;
     static int remainder;
     static int lesson = 45;
-    public static void lessons() throws IOException {
+    public static void FinishLessons() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         countOfLessons = Integer.parseInt(reader.readLine()) - 1;
 

@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class CountLettersFromChar {
     static int count = 0;
     static String input;
-    public static void count() throws IOException {
+    public static void CountLettersFromChar() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         input = reader.readLine();
         char [] chars = input.toCharArray();
