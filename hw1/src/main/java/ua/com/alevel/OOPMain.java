@@ -6,7 +6,7 @@ import ua.com.alevel.homework.FinishLessons;
 
 import java.io.IOException;
 
-public class Main {
+public class OOPMain {
     public static void main(String[] args) throws IOException {
         SumFromChar.SumFromChar();
         CountLettersFromChar.CountLettersFromChar();
