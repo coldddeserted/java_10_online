@@ -2,8 +2,8 @@ package ua.com.alevel.db;
 
 import ua.com.alevel.entity.Worker;
 
-public class DbWorker implements WorkerStorage {
-    private Worker[] workers = new Worker[10];
+public class DbWorker {
+    private final Worker[] workers = new Worker[10];
     public void create(Worker worker) {
         for (int i = 0; i < workers.length; i++) {
             if (workers[i] == null) {

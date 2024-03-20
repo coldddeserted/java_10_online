@@ -1,11 +1,10 @@
 package ua.com.alevel.service;
 
-import ua.com.alevel.db.WorkerStorage;
+import ua.com.alevel.db.DbWorker;
 import ua.com.alevel.entity.Worker;
-import ua.com.alevel.factory.WorkerStorageFactory;
 
 public class WorkerService {
-    WorkerStorage workerStorage = WorkerStorageFactory.getWorkerStorage();
+    static DbWorker workerStorage = new DbWorker();
     public void create(Worker worker) {
         if (worker.getFirstName() != null) {
             workerStorage.create(worker);
@@ -29,7 +28,7 @@ public class WorkerService {
     public Worker seeById(int id) {
         return workerStorage.seeById(id);
     }
-    public Worker seeByGroup(String group) {
+    public static Worker seeByGroup(String group) {
         return workerStorage.seeByGroup(group);
     }
 }
